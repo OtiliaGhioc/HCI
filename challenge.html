@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="challenge.css">
+<meta charset="UTF-8">
+<title>Challenge#2</title>
+</head>
+<body>
+<h1 align="center">Remote Communication</h1>
+<h2>Content</h2>
+<nav>
+  <ul>
+    <li><a href="#1">Zoom</a></li>
+    <ul>
+      <li><a href="#1.1">Existing affordances</a></li>
+      <li><a href="#1.2">Metaphors and idioms</a></li>
+      <li><a href="#1.3">Cognitive overload</a></li>
+      <li><a href="#1.4">Improvements</a></li>
+      <ul>
+        <li><a href="#1.4.1">Desktop</a></li>
+        <ul>
+          <li><a href="#1.4.1.1">Problems</a></li>
+          <li><a href="#1.4.1.2">Solutions</a></li>
+        </ul>
+        <li><a href="#1.4.2">Mobile</a></li>
+        <ul>
+          <li><a href="#1.4.2.1">Problems</a></li>
+          <li><a href="#1.4.2.2">Solutions</a></li>
+        </ul>
+      </ul>
+      <li><a href="#1.5">Empiric Laws</a></li>
+      <ul>
+        <li><a href="#1.5.1">Fitts' Law</a></li>
+        <li><a href="#1.5.2">Hick's Law</a></li>
+        <li><a href="#1.5.3">Steering Law</a></li>
+      </ul>
+      <li><a href="#1.6">New Features</a></li>
+    </ul>
+    <li><a href="#2">Webex</a></li>
+    <ul>
+      <li><a href="#2.1">Existing affordances</a></li>
+      <li><a href="#2.2">Metaphors and idioms</a></li>
+      <li><a href="#2.3">Cognitive overload</a></li>
+      <li><a href="#2.4">Improvements</a></li>
+      <ul>
+        <li><a href="#2.4.1">Desktop</a></li>
+        <ul>
+          <li><a href="#2.4.1.1">Problems</a></li>
+          <li><a href="#2.4.1.2">Solutions</a></li>
+        </ul>
+        <li><a href="#2.4.2">Web</a></li>
+        <ul>
+          <li><a href="#2.4.2.1">Problems</a></li>
+          <li><a href="#2.4.2.2">Solutions</a></li>
+        </ul>
+      </ul>
+      <li><a href="#2.5">Empiric Laws</a></li>
+      <ul>
+        <li><a href="#2.5.1">Fitts' Law</a></li>
+        <li><a href="#2.5.2">Hick's Law</a></li>
+        <li><a href="#2.5.3">Steering Law</a></li>
+      </ul>
+      <li><a href="#2.6">New Features</a></li>
+    </ul>
+    <li><a href="#3">Comparison</a></li>
+    <li><a href="#4">Contribution</a></li>
+</ul>
+</nav>
+<br>
+<ol>
+<h2 id = "1"><li>Zoom</li></h2>
+<ul>
+<h2 id = "1.1"><li>Affordances, visual variables and interaction flows</li></h2>
+<h3><u>Academic presentation</u></h3>
+<ul>
+<p><li>Affordance and visual variables:</li></p>
+<p><b>Schedule meeting:</b> The presenter can schedule a meeting.</p>
+<p><b>Join meeting:</b> Allow people to join a meeting.</p>
+<p><b>Screen sharing:</b> The presenter can share their screen and present content.</p>
+<p><b>Virtual background:</b> Enables the presenter to employ a virtual background to block out distractions and establish a professional atmosphere.</p>
+<p><b>Breakout rooms:</b> The presenter can divide the audience into smaller groups for talks or activities.</p>
+<p><b>Whiteboard:</b> Enables the speaker to annotate or draw.</p>
+<p><b>Chat</b>: Allows attendees to ask questions or make comments.</p>
+<p><b>Raise hand:</b> Allows attendees to raise their hand virtually and let the speaker know they have questions.</p>
+<p><li>Interaction flow:</li></p>
+<p>The speaker provides the material while sharing their screen, then accepts questions at the conclusion. Participants can offer questions in the chat feature or indicate their want to speak by raising their hands.</p>
+<p><li>Proposed Approaches:</li></p>
+<p>Introduce a tool, like polling or quizzes, that enables the presenter to engage the audience more actively. This can assist in maintaining audience interest and offer a quick response.</p>
+</ul>
+<br>
+<h3><u>Attending meeting at late hours</u></h3>
+<ul>
+<p><li>Affordance and visual variables:</li></p>
+<p><b>Audio and video calls:</b>Attendees can engage in the debate through audio and video calls.</p>
+<p><b>Screen sharing:</b>Allows the presenter to share content.</p>
+<p><b>Chat</b>:Participants can communicate with one another or ask questions to the presenter.</p>
+<p><b>Raise hand:</b>Participants can raise their hand virtually in order to ask questions.</p>
+<p><li>Interaction flow:</li></p>
+<p>Via the chat or audio feature, participants join the call, listen to the topic, and engage as needed.</p>
+<p><li>Proposed Approaches:</li></p>
+<p>Provide a function that converts the call's audio to text automatically. Those who might struggle to focus or stay awake during a late-night meeting can benefit from this.</p>
+</ul>
+<h2 id = "1.2"><li>Metaphors and idioms</li></h2>
+<p>Visual metaphors and idioms would not be directly applicable if we used a text-only interface. Instead, functionality and feedback would be given by textual standards. To establish and handle meetings, webinars, and other Zoom resources, for instance, the Zoom API should offer a set of commands.</p>
+<h3><u>Metaphors:</u></h3>
+<p>Gallery View: This is a view in Zoom that displays all the participants in a meeting in a grid-like format, similar to a gallery.</p>
+<p>Mute/Unmute Button: This is a button in Zoom that allows users to mute or unmute their microphone during a meeting <img src="mic.png" alt="microphone" style="width:3%"> It is usually represented by a microphone icon with a slash through it when muted <img src="notmic.png" alt="notMicrophone" style="width:3%"></p>
+<p>Chat Box: This is a text-based chat window in Zoom that allows users to communicate with each other via text. It is represented by an icon of a speech bubble <img src="chat.png" alt="chat" style="width:3%"></p>
+<p>Raise Hand Button: Allows participants to indicate that they want to speak or ask a question. It is usually represented by an icon of a hand raised <img src="raisehand.png" alt="hand" style="width:7%"></p>
+<p>Video Button: This is a button in Zoom that allows users to turn their video on or off during a meeting. It is usually represented by an icon of a video camera <img src="video.png" alt="camera" style="width:4%"></p>
+<p>Settings Button: Users can access and customize their audio and video settings. It is usually represented by an icon of a gear <img src="settings.png" alt="gear" style="width:2%"></p>
+<p>Home Button: Access the pain page. It is represented by an icon of a house <img src="home.png" alt="house" style="width:3%"></p>
+<p>Mail Button: Allows users to access their Zoom Mail. It is represented by an icon of a letter <img src="mail.png" alt="letter" style="width:3%"></p>
+<p>Calendar/Schedule Button: This is a button in Zoom that allows users to access and plan their calendar. They can schedule a meeting or they can see future meetings. It is represented by an icon of a calendar <img src="calendar.png" alt="calendar" style="width:4%"></p>
+<p>Whiteboards Button: Users access and use the whiteboard. It is represented by an icon of a whiteboard with a pen <img src="whiteboard.png" alt="whiteboard" style="width:5%"></p>
+<p>Participants Button: It is used to show the list of participants. It is represented by an icon of two persons <img src="participants.png" alt="people" style="width:5%"></p>
+<p>Reactions Button: Used by participants to share their reactions using emoticons. Represented by a smiley face <img src="reactions.png" alt="smile" style="width:4%"></p>
+<p>Security Button: Used by the creator of the meeting in order to set what participants are allowed to do. Represented by a shield <img src="security.png" alt="shield" style="width:4%"></p>
+<br>
+<h3><u>Idioms:</u></h3>
+<p>Share screen Button: This button features a square with an arrow oriented up, which represents the idea of sharing your computer screen with others in the meeting <img src="sharescreen.png" alt="arrowup" style="width:5%"></p>
+<p>Record Button: This is a button in Zoom that allows users to record a meeting. It is represented by an icon of a white circle with a white dot in the center.</p>
+<p>Join meeting Button: A person use this button to join a meeting. It is represented by a square with a plus <img src="join.png" alt="plus" style="width:3%"></p>
+<p>Full Screen Button: This is a button in Zoom that allows users to view the meeting in full-screen mode. It is represented by an icon of an arrow pointing outward.</p>
+<br>
+<h3><u>Textual conventions that could be used in a Zoom CLI:</u></h3>
+<p><b>create meeting:</b> This command could be used to create a new Zoom meeting, with additional arguments specifying the time, date, and other details.</p>
+<p><b>join meeting:</b> This command could be used to join a Zoom meeting, with additional arguments specifying the meeting ID and password.</p>
+<p><b>list meetings:</b> This command could be used to list all of the Zoom meetings associated with a user's account.</p>
+<p><b>end meeting:</b> This command could be used to end an ongoing Zoom meeting.</p>
+<p><b>zoom calendar:</b>This command could be used to list all Zoom meetings from a person's calendar, with additional arguments specifying a day, a week, a certain period of time.</p>
+<p><b>zoom details:</b>This command could be used to get details from a meeting such as password.</p>
+<p><b>zoom invite:</b>This command could be used to add a new person in the current meeting.</p>
+
+
+<h2 id="1.3"><li>Cognitive overload</li></h2>
+<h2 id="1.4"><li>Improvements</li></h2>
+<ul>
+<h2 id="1.4.1"><li>Desktop</li></h2>
+<h2 id="1.4.1.1">Problems</h2>
+<ol>
+<p><li><u>Buttons:</u> Due to the resize window function of the desktop application, certain buttons on the main screen may disappear, requiring several actions to find a button and use it.</li></p>
+<p><li><u>Share:</u> When a user wants to share the screen, they have to press quite a large number of buttons to perform this action</li></p>
+</ol>
+<h2 id="1.4.1.2">Solutions</h2>
+<ol>
+  <p><li><u>Costumizable order of buttons:</u> The bottom bar that contains all the buttons allows editing according to the user's preferences so that he can choose which buttons are more useful for him and place them in a visible place, especially when the resize window function is also used.</li></p>
+  <p><li><u>Share:</u> The desktop and web app could simplify the screen sharing interface by reducing the number of buttons and options.</li></p>
+</ol>
+<h2 id="1.4.2"><li>Mobile</li></h2>
+<h2 id="1.4.2.1">Problems</h2>
+<ol>
+  <p><li><u>Buttons:</u> For the current version of the application, the buttons used to create or participate in a meeting are not in an easily accessible place.</li></p>
+  <p><li><u>Share:</u> When the user uses the mobile application and wants to share the screen, there are many options, including that of sharing files</li></p>
+</ol>
+<h2 id="1.4.2.2">Solutions</h2>
+<ol>
+  <p><li><u>Costumizable order of buttons:</u> Just like in the case of the desktop application, all the buttons should have the possibility to be placed wherever the user wants.</li></p>
+  <p><li><u>Share:</u> For the share button, there should only be one use to share the screen on the phone and in the chat window there should be buttons only to share some files.</li></p>
+</ol>
+</ul>
+<h2 id = "1.5"><li>Empiric Laws</li></h2>
+<h2 id ="1.5.1"> 1.5.1. Fitts' Law</h2>
+<h2 id ="1.5.2">1.5.2. Hick's Law</h2>
+<h2 id ="1.5.3">1.5.3. Steering Law</h2>
+<h2 id = "1.6"><li>New Features</li></h2>
+</ul>
+<h2 id = "2"><li>Webex</li></h2>
+<p>
+Cisco Webex is a video conferencing and collaboration product suite.
+This cloud-based collaboration suite is comprised of software including Webex Meetings, Webex Teams and Webex Devices. The Webex suite is a merger of Cisco's Webex web conferencing platform and the Cisco Spark team collaboration app.
+</p>
+<h2 id = "2.1">2.1. Existing affordances, visual variables and interaction flows</h2>
+<p>
+hfhgfhgjhfg
+</p>
+<h2 id = "2.2">2.2. Metaphors and idioms</h2>
+<h2 id="2.3">2.3. Cognitive overload</h2>
+<h2 id="2.4">2.4. Improvements</h2>
+<h2 id="2.4.1">2.4.1. Desktop</h2>
+<h2 id="2.4.1.1">2.4.1.1. Problems</h2>
+<p>
+hfhgfhgjhfg
+</p>
+<h2 id="2.4.1.2">2.4.1.2. Solutions</h2>
+<h2 id="2.4.2">2.4.2. Web</h2>
+<h2 id="2.4.2.1">2.4.2.1. Problems</h2>
+<h2 id="2.4.2.2">2.4.2.2. Solutions</h2>
+<h2 id = "2.5">2.5. Empiric Laws</h2>
+<h2 id ="2.5.1">2.5.1. Fitts' Law</h2>
+<h2 id ="2.5.2">2.5.2. Hick's Law</h2>
+<h2 id ="5.3">2.5.2. Steering Law</h2>
+<h2 id = "2.6">2.6. New Features</h2>
+
+<h2 id="3"><li>Comparison</li></h2>
+</ol>
+</body>
+</html>

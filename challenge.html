@@ -217,7 +217,53 @@ These are features that allow both the presenter and the participants to have a 
 </ul>
 <br>
 
-<h2 id = "2.2">2.2. Metaphors and idioms</h2>
+<h2 id = "2.2"><li>Metaphors and idioms</li></h2>
+<h3><u>Metaphors:</u></h3>
+<p><b>Muted/Unmuted:</b> Allows users to turn on/off their microphone. It it represented by a picture of a microphone <img src="webex_micON.png" alt="webex_micON" style="width:5%"> slashed by a red line when it is off <img src="webex_micOFF.png" alt="webex_micOFF" style="width:5%">, labeled with the action the user can take(<i>mute</i> - when the mic is ON, <i>unmute </i>- when the mic is OFF). Additionally, when it receives sound, the green color moves up and down to denote that it is working. </p>
+<p><b>Video ON/OFF:</b> Lets users to turn on/off their camera. It it represented by a picture of a camera <img src="webex_cameraON.png" alt="webex_cameraON" style="width:5%"> slashed by a red line when it is off <img src="webex_cameraOFF.png" alt="webex_cameraOFF" style="width:5%">, labeled with the action the user can take(<i>stop video</i> - when the camera is ON, <i>start video</i> - when the camera is OFF). </p>
+<p><b>Record button:</b> Allows users to record the meeting and review it later. It is represented by a picture of a vinyl record disc <img src="webex_record.png" alt="webex_record" style="width:5%"> labeled with the action.(<i>record</i>)</p>
+<p><b>Raise hand & reactions:</b> These have two separate functions that are very similar, which is why they are merged in one single element. <img src="webex_hand+react.png" alt="webex_hand+reactions" style="width: 4%"> The hand represents the action of raising the hand, and the smiley face with a plus sign represents adding reactions.</p>
+<p><b>Leave/End meeting:</b> Permits the host to end the meeting and the participants leave it. It is represented by a white "<i>X</i>" inside of a red circle. <img src="webex_end.png" alt="webex_end_meeting" style="width:2%"></p>
+<p><b>Chat Box:</b> Opens a text-based chat window that allows users to communicate with each other via text. It is represented by an icon of a speech bubble found in majority of comic books. It is found with <img src="webex_chat_web.png" alt="chat" style="width:5%"> (web) and without  <img src="webex_chat.png" alt="chat" style="width:2%"> (desktop) the label. </p>
+<p><b>Home: </b> Sends user to the main page. It is represented by a picture of a house. <img src="webex_home.png" alt="webex_home" style="width:5%"></p>
+<p><b>Join meeting:</b> Found in the main page, it allows user to join an existing meeting. It is represented by an arrow pointing to a door. <img src="webex_join.png" alt="webex_join" style="width:2%"></p>
+<p><b>Schedule a meeting:</b> Found in the main page, it allows the host to plan the meeting ahead. It is represented by a calendar with a plus sign inside. <img src="webex_schedule.png" alt="webex_schedule" style="width:3.5%"> </p>
+<p><b>Settings:</b> Found in the main page, it allows users to access advanced settings. It is represented by a gear. <img src="webex_settings.png" alt="webex_settings" style="width:2.5%"></p>
+<p><b>Help:</b> Offers user a variety of options: updates, keyboard shortcuts, help center, news. It is represented by a question mark in a circle.  <img src="webex_help.png" alt="webex_help" style="width:5%"></p>
+<br>
+<p> There are many other metaphors used in the desktop or web application, but these are the most relevant and useful ones. </p>
+<br>
+
+<h3><u>Idioms:</u></h3>
+<p><b>Down arrow:</b> Both microphone and camera buttons come with a small down arrow to hide the advanced settings (input/output level, filter, device to be used, etc.).  <img src="webex_arrow_mic.png" alt="webex_arrow_mic" style="width:7%">  <img src="webex_arrow_cam.png" alt="webex_arrow_cam" style="width:7%"></p>
+<p><b>Start new meeting:</b> Found in the main page, it allows the host to create a new meeting. It is represented by a camera.  <img src="webex_start.png" alt="webex_start" style="width:3%"></p>
+<p><b>Upgrade:</b> Gives the option to users to upgrade to a premium version. It is represented by a crown.  <img src="webex_upgrade.png" alt="webex_upgrade" style="width:6%"></p>
+<p><b>Share scree:</b> Permits users to share multimedia content from their computer. It is represented by a box with an up arrow.  <img src="webex_share.png" alt="webex_share" style="width:5%"></p>
+<p><b>More options:</b> Gives more options to users, such as: inviting others to the meeting or move to another device. It is represented by a line of three dots in s circle.  <img src="webex_options.png" alt="webex_options" style="width:2.5%"> </p>
+<p><b>Applications:</b> Lets users choose from a multitude of apps. It is represented by a grid of three squares and a plus sign.  <img src="webex_apps.png" alt="webex_apps" style="width:4.5%"></p>
+<p><b>Participants:</b> Allows user to see other participants in the meeting. It is represented by a human figure with a column of three lines.  <img src="webex_participants.png" alt="webex_participants" style="width:2%"> </p>
+<p><b>Panel Options: </b> Allows users to choose from taking notes or opening a Q&A session. It is represented by a line with three dots.  <img src="webex_panel.png" alt="webex_panel" style="width:3%"></p>
+<br>
+<p>There are many other idioms used in the desktop and web application, but these are the most relevand and useful ones.</p>
+<br>
+
+<h3><u>CLI:</u></h3>
+<p><b>newm (new meeting):</b> Create/schedule a meeting, paired with additional arguments specifying the time, date, and other details. (eg: <i>newm -d 20.10.23 -t 08:30 -dr 2</i>, create a two hour meeting on 20th of october in 2023, at 08:30 am. <i>newm</i>, creates a meeting at the moment) </p>
+<p><b>joinm (join meeting):</b> Join an existing meeting, paired with mandatory arguments specifying the meeting ID and password.(eg: <i>joinm 
+  2741 692 3383 0848</i>)</p>
+<p><b>sttg (settings):</b> Access advanced settings, with additional arguments specifying which settings you are interesting in changing. (eg:<i>sttg -a:o=6</i>, sets the audio output level to 6)</p>
+<p><b>end:</b> End (in the case of the host) or to leave a meeting (in the case of participants.</p>
+<p><b>moff (microphone off):</b> Mute the microphone.</p>
+<p><b>mon (microphone on):</b> Unmute the microphone.</p>
+<p><b>coff (camera off):</b> Disable the camera. </p>
+<p><b>con (camera on):</b> Start the camera. </p>
+<p><b>rcd (record):</b> Record the meeting. </p>
+<p><b>rct (react):</b> React, paired with additional arguments. (eg: <i>rct -rh </i>, raises your hand; <i>rct -h</i>, reacts with a heart) </p>
+<p><b>cd:</b> Return to the previous directory. Works the same as the terminal command. </p>
+<p><b>help:</b> Opens the help menu. </p>
+<p><b>upg (upgrade):</b> Upgrade the app, paired with additional arguments specifying the level you wish to upgrade. (eg: <i>upg -p1</i>, upgrade to premium 1) </p>
+<p><b>app:</b> Access applications, paired with additional arguments specifying which app you would like to open. (eg:<i>app -ttt</i>, opens tic tac toe game) </p>
+<br> 
 <h2 id="2.3">2.3. Cognitive overload</h2>
 <h2 id="2.4">2.4. Improvements</h2>
 <h2 id="2.4.1">2.4.1. Desktop</h2>

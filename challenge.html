@@ -54,7 +54,7 @@
       </ul>
       <li><a href="#2.6">New Features</a></li>
     </ul>
-    <li><a href="#3">Comparison</a></li>
+    <li><a href="#3">Bonus</a></li>
     <li><a href="#4">Contribution</a></li>
 </ul>
 </nav>
@@ -108,6 +108,9 @@
 <p>Participants Button: It is used to show the list of participants. It is represented by an icon of two persons <img src="participants.png" alt="people" style="width:5%"></p>
 <p>Reactions Button: Used by participants to share their reactions using emoticons. Represented by a smiley face <img src="reactions.png" alt="smile" style="width:4%"></p>
 <p>Security Button: Used by the creator of the meeting in order to set what participants are allowed to do. Represented by a shield <img src="security.png" alt="shield" style="width:4%"></p>
+<p>Contacts Button: This button is used to see all your contacts. Represented by a person in a square <img src="contacts.png" alt="person" style="width:4%"></p>
+<p>New Message Button: Used by a person in order to sent a message. Represented by a pen <img src="mess.png" alt="pen" style="width:3%"></p>
+
 <br>
 <h3><u>Idioms:</u></h3>
 <p>Share screen Button: This button features a square with an arrow oriented up, which represents the idea of sharing your computer screen with others in the meeting <img src="sharescreen.png" alt="arrowup" style="width:5%"></p>
@@ -115,7 +118,7 @@
 <p>Join meeting Button: A person use this button to join a meeting. It is represented by a square with a plus <img src="join.png" alt="plus" style="width:3%"></p>
 <p>Full Screen Button: This is a button in Zoom that allows users to view the meeting in full-screen mode. It is represented by an icon of an arrow pointing outward.</p>
 <br>
-<h3><u>Textual conventions that could be used in a Zoom CLI:</u></h3>
+<h3><u>CLI:</u></h3>
 <p><b>zmcreate:</b> This command could be used to create a new Zoom meeting, with additional arguments specifying the time, date, and other details.</p>
 <p><b>zmjoin</b> This command could be used to join a Zoom meeting, with additional arguments specifying the meeting ID and password.</p>
 <p><b>zmlist:</b> This command could be used to list all of the Zoom meetings associated with a user's account.</p>
@@ -123,9 +126,26 @@
 <p><b>zmcalendar:</b>This command could be used to list all Zoom meetings from a person's calendar, with additional arguments specifying a day, a week, a certain period of time.</p>
 <p><b>zmdetails:</b>This command could be used to get details from a meeting such as password.</p>
 <p><b>zminvite:</b>This command could be used to add a new person in the current meeting.</p>
+<p><b>zmute/zunmute:</b>This command could be used to mute/unmute the mic in a meeting.</p>
+<p><b>zmhome:</b>This command could be used to return to the main screen.</p>
+<p><b>zmraise:</b>This command could be used to raise a hand in a meeting to signal the want to speak.</p>
+<p><b>zmstart/zmstop:</b>This command could be used to start/stop video camera.</p>
+<p><b>zmmail:</b>This command could be used to see new emails in Zoom.</p>
+<p><b>zmshare:</b>This command could be used to share content.</p>
+<p><b>zmrecord:</b>This command could be used to start screen record.</p>
+<p><b>zmcontacts:</b>This command could be used to list all your contacts.</p>
+<p><b>zmsend:</b>This command could be used to send a message to a person, you should use arguments in order to be able to send a message.</p>
+
 
 
 <h2 id="1.3"><li>Cognitive overload</li></h2>
+<p>When a user is confronted with too much information or too many alternatives to process, cognitive overload can happen in the Zoom app, which can cause confusion and frustration. This may affect user experience and result in lower engagement and productivity. From a UI/UX point of view, there are several factors that can contribute to cognitive overload in the Zoom app in special conditions or contexts.</p>
+<h3><u>General</u></h3>
+<p>Users can adjust a wide range of audio and video settings, including camera angle, microphone and speaker volume, and background noise suppression. Customers could struggle to discover the best settings for their needs because of the wide range of possibilities.</p>
+<p>Users with disabilities, such as those who have hearing or vision difficulties, may find it difficult to use Zoom or to grasp its auditory or visual indications.</p>
+<h3><u>Late hours meeting & Academic presentations</u></h3>
+<p>Several windows and controls, including chat, a participants list, and screen sharing, are available to users of Zoom. Those who are inexperienced with the program or who are not used to multitasking may find this to be overwhelming. Also, people with disabilities may find it challenging to operate these windows and controls.</p>
+<p>Because there are too many options and buttons, using share screen is frequently complicated.</p>
 <h2 id="1.4"><li>Improvements</li></h2>
 <ul>
 <h2 id="1.4.1"><li>Desktop&Web</li></h2>
@@ -166,7 +186,7 @@
 <h2 id ="1.5.2"><li>Hick's Law</li></h2>
 <p>A psychological principle known as Hick's Law defines how long it takes to decide as the number of possibilities grows. This is significant for design since it demonstrates how Hick's Law may be applied to any choice where there are numerous alternatives.</p>
 <br>
-<p>Users might have access to a variety of choices, including joining a meeting, sharing a screen, and muting and unmuting audio. The quantity of alternatives and the kinds of technologies used to access them might affect how long it takes to make a decision. The cognitive load associated with each option and device should be taken into account, if a user needs to choose between several options available on a smartphone and a laptop. For consumers who handle a mobile device in addition to a desktop computer, the Zoom App might offer a streamlined interface with fewer options to help shorten the decision-making process.</p>
+<p>Users might have access to a variety of choices, including joining a meeting, sharing a screen, and muting and unmuting audio. The quantity of alternatives and the kinds of technologies used to access them might affect how long it takes to make a decision. The cognitive load associated with each option and device should be taken into account, if a user needs to choose between several options available on a smartphone and a laptop. For consumers who handle a mobile device in addition to a desktop computer, the Zoom App might offer a streamlined interface with fewer options to help shorten the decision-making process. For example on mobile platform when you want to share your screen there are too many options to choose from.</p>
 <br>
 <p>Some choices could be more important than others. For instance, choosing which virtual background to use may have not immediate repercussions versus determining whether to unmute audio during a meeting. When evaluating the time needed to make a decision, the decision's importance should be taken into account.</p>
 <h2 id ="1.5.3"><li>Steering Law</li></h2>
@@ -175,6 +195,27 @@
 <p>To participate in meetings or webinars, users frequently use a combination of devices, such as a computer, smartphone, or tablet. Throughout a Zoom meeting, people might regularly switch between devices. This can make it more difficult for the brain to process information and slow down or aﬀect cursor movement. When switching between devices, the Zoom app can offer visual hints or feedback to minimize cognitive load. As an example, while switching between devices, the cursor might vary in color or shape, serving as a visual cue.</p>
 </ol>
 <h2 id = "1.6"><li>New Features</li></h2>
+<h3><u>Customizable user interface elements</u></h3>
+<p>Users may be able to customize the Zoom app interface's look and feel by altering the color scheme or the order in which the different elements are shown. So there can be a button in the settings section to be able to modify the general theme of the application (color/font) as well as the icons (both color and shape, and the order/place of their display depending on the priority chosen by the user). To be able to change the icons in accordance with their priority and frequency of use, a button with the same functionality must also be present in the window of a meeting that is currently in progress. The button below would be located in Setting window and on a meeting screen.</p>
+<div style="text-align:center;">
+  <img src="customize.png" alt="customize" style="width:19%">
+</div>
+<h3><u>Onboarding experience</u></h3>
+<p>When an app is first launched, a user is guided through its main features and functionalities by a series of screens or other interactive elements. The goal of the onboarding process is to provide users a quick understanding of how the app works and how to use it successfully. It might have things like greetings, highlighting particular features, interactive walkthroughs, and advice or hints. The purpose of the onboarding process is to shorten the learning curve for new users and improve their app engagement. However, there should also be a button for users who already have the application but want to go through the onboarding experience again.</p>
+<div style="text-align:center;">
+  <img src="onboard.png" alt="boat" style="width:22%">
+</div>
+<div style="text-align:center;">
+  <img src="onboard-boat.png" alt="onboard-boat" >
+  </div>
+<h3><u>Subtitles</u></h3>
+<p>Some zoom users may not be able to listen to the conversation (they are deaf or just simply can concentrate better by reading something). During a meeting a user can enable subtitles and read the conversation in the meeting. A button can be added in the buttons' tab; this button, when pressed will enable the subtitles for his own window. When a member is speaking, what he/she is saying will be translated in text.  Once the subtitles button is pressed a notification will be sent to all the members in the meeting, making them aware that the subtitles have been activated. The subtitles will be saved in a document and at the end of the meeting, the document will be downloaded to the PC of the user that pressed the subtitles button.</p>
+<div style="text-align:center;">
+<img src="subtitles.png" alt="subtitles" style="width:27%">
+</div>
+<div style="text-align:center;">
+<img src="subtitles-bar.png" alt="subtitles-bar" >
+</div>
 </ul>
 <h2 id = "2"><li>Webex</li></h2>
 <p>
@@ -321,7 +362,7 @@ These are features that allow both the presenter and the participants to have a 
 <h2 id = "2.6">2.6. New Features</h2>
 </ul>
 
-<h2 id="3"><li>Comparison</li></h2>
+<h2 id="3"><li>Bonus</li></h2>
 </ol>
 </body>
 </html>
